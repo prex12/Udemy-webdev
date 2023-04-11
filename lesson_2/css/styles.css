@@ -1,35 +1,63 @@
 body{
     background-color:#ECF2FF;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: #66BFBF;
+}
+.pro{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.625rem;
     margin: 0 auto;
+    color: #66BFBF;
 }
 
-.text{
-    font-family:'Poppins', sans-serif;;
+.top-container{
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    background-color:#B9F3FC;
 }
-
-.top {
-    background-color: red;
-    height: 100px;
-    width: 100px;
+.cloud1{
     display: inline-block;
     position: absolute;
+    right: 200px;
+    top: 50px; 
 }
-.middle{
-    background-color: green;
-    height: 100px;
-    width: 100px;
+.cloud2{
     display: inline-block;
     position: absolute;
-    top: 100px;
-    left:100px
-}
-
-.bottom{
-    background-color: blue;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    position: absolute;
-    top: 200px;
+    top: 300px;
     left: 200px;
+
+}
+
+.middle-container{
+    text-align: center;
+    padding: 50px;
+}
+
+.bottom-container{
+    background-color: aqua;
+    text-align: center;
+    padding: 5px;
+}
+
+.skill-row{
+    margin: 100px auto;
+    width: 50%;
+    text-align: left;
+    line-height: 2;
+}
+
+.pro-img{
+    width: 25%;
+    margin-right: 30px;
 }
