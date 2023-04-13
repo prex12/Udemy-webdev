@@ -5,6 +5,7 @@ body{
 
 h2{
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     color: #66BFBF;
 }
 .pro{
@@ -13,8 +14,9 @@ h2{
 }
 
 h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5.625rem;
+    font-family:'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 4.625rem;
     margin: 0 auto;
     color: #66BFBF;
 }
@@ -45,19 +47,35 @@ h1{
 }
 
 .bottom-container{
-    background-color: aqua;
+    height: 100px;
+
+    background-color: #B9F3FC;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+}
+
+.footer-link{
+    font-family:'Poppins', sans-serif;
+    padding: 20px;
+    margin: 100px 0;
+    text-decoration: none;
 }
 
 .skill-row{
     margin: 100px auto;
-    width: 50%;
+    width: 70%;
     text-align: left;
     line-height: 2;
 }
 
-.pro-img{
+.pro-img1{
+    float: left;
     width: 25%;
     margin-right: 30px;
+}
+
+.pro-img2{
+    float: right;
+    width: 25%;
+    margin-left: 30px;
 }
