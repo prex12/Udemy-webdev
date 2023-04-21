@@ -1,9 +1,45 @@
+body{
+    font-family: 'Montserrat';
+}
+
 #title{
     background-color: #ff4c68;
+    color: #FFF;
+    height: 600px;
+    overflow: hidden;
 }
 
 .h1-title{
-    font-family: 'Montserrat-black', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     font-size: 3rem;
     line-height: 1.5;
+}
+
+.img-dog{
+    height: 350px;
+    transform: rotate(25deg);
+}
+
+.container-fluid{
+    padding: 3% 10%;
+}
+
+/* Navbar */
+
+.navbar{
+    padding-bottom: 120px; 
+}
+
+.nav-item{
+    padding: 20px;
+}
+
+.nav-link{
+    font-size: 1rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2rem;
 }
