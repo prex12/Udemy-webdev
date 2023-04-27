@@ -5,19 +5,21 @@ body{
 #title{
     background-color: #ff4c68;
     color: #FFF;
-    height: 600px;
-    overflow: hidden;
+    
 }
 
 .h1-title{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Black', sans-serif;
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.5;
 }
 
 .img-dog{
-    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 25%;
+    right: 20%;
     transform: rotate(25deg);
 }
 
@@ -25,7 +27,18 @@ body{
     padding: 3% 10%;
 }
 
-/* Navbar */
+@media (max-width: 1028px) {
+    .img-dog{
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title{
+        text-align: center;
+    }
+}
+
+/* Navbar section */
 
 .navbar{
     padding-bottom: 120px; 
@@ -42,4 +55,137 @@ body{
 .navbar-brand{
     font-family: "Ubuntu";
     font-size: 2rem;
+}
+
+/* Features section */
+
+#features{
+    background-color: #fff;
+    position: relative;
+    
+}
+
+.s-row{
+    padding: 50px;
+}
+
+.f-cols{
+    text-align: center;
+}
+.f-col{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.p-cla{
+    color: #8f8f8f;
+}
+
+.word-1{
+    font-family: "Montserrat-bold", sans-serif;
+    font-size: 1.5rem;
+}
+.fa{
+    margin-bottom: 20px;
+}
+.fa-icon{
+    font-size: 80px;
+    color: #ff4c68;
+}
+
+.fa-icon:hover{
+    color:#ef8172;
+}
+
+
+
+
+/* Testimonials section */
+
+#testimonials{
+   background-color: #ff4c68;
+   text-align: center;
+   padding: 2% 0 0; 
+   position: relative;
+   z-index: 1;
+}
+
+.carousel-indicators{
+    position: absolute;
+    top: 90%;
+}
+.testimonial-text{
+    color: #FFF;
+    font-weight:bolder;
+    margin: 0 auto;
+    width: 60%;
+}
+
+em{
+    color:#fff;
+}
+
+.testimonial-image{
+    padding: 20px 0;
+    border-radius: 100%;
+    width: 80px;
+    margin: 0 10px 0px 0;
+}
+
+/* press */
+#press{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.press-img{
+    width: 10%;
+}
+
+#pricing{
+    background-color: #ffff;
+}
+
+.prices{
+    padding: 30px;
+    text-align: center;
+}
+
+.card-header{
+    background-color:#ff4c68;
+    color: white;
+}
+
+/* CTA section */
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 120px;
+
+}
+
+.footer-text{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+/* footer section */
+#footer{
+    background-color: #FFF;
+    text-align: center;
+    padding: 80px;
+}
+.logos-mid{
+    font-size: 1.5rem;
+    padding: 20px 10px 20px;
+    color: #ff4c68;
+}
+
+.lo :hover{
+    color: #000;
 }
