@@ -1,12 +1,24 @@
+
+/* html Element tags */
 body{
     font-family: 'Montserrat';
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat-Bold", sans-serif;
+}
 
-#title{
+
+
+/* refactored sections */
+.colored-section{
     background-color: #ff4c68;
     color: #FFF;
-    
 }
+
+.white-section{
+    background-color: #fff;
+}
+/* title section */
 
 .h1-title{
     font-family: 'Montserrat-Black', sans-serif;
@@ -25,17 +37,6 @@ body{
 
 .container-fluid{
     padding: 3% 10%;
-}
-
-@media (max-width: 1028px) {
-    .img-dog{
-        position: static;
-        transform: rotate(0);
-    }
-
-    #title{
-        text-align: center;
-    }
 }
 
 /* Navbar section */
@@ -60,7 +61,6 @@ body{
 /* Features section */
 
 #features{
-    background-color: #fff;
     position: relative;
     
 }
@@ -103,7 +103,6 @@ body{
 /* Testimonials section */
 
 #testimonials{
-   background-color: #ff4c68;
    text-align: center;
    padding: 2% 0 0; 
    position: relative;
@@ -134,36 +133,28 @@ em{
 
 /* press */
 #press{
-    background-color: #ff4c68;
     text-align: center;
-    padding: 2% 0;
+    padding: 10% 0 3%;
 }
 
 .press-img{
     width: 10%;
 }
 
-#pricing{
-    background-color: #ffff;
-}
+
+/* pricing section */
 
 .prices{
     padding: 30px;
     text-align: center;
 }
 
-.card-header{
-    background-color:#ff4c68;
-    color: white;
-}
 
 /* CTA section */
 
 #cta{
-    background-color: #ff4c68;
     text-align: center;
-    padding: 120px;
-
+    padding: 80px;
 }
 
 .footer-text{
@@ -174,9 +165,17 @@ em{
     margin-bottom: 50px;
 }
 
+
+.h3-card{
+    font-weight: 900;
+}
+
+.h2-card{
+    font-weight: 700;
+}
+
 /* footer section */
 #footer{
-    background-color: #FFF;
     text-align: center;
     padding: 80px;
 }
@@ -188,4 +187,16 @@ em{
 
 .lo :hover{
     color: #000;
+}
+
+/* Responsiveness section */
+@media (max-width: 1028px) {
+    .img-dog{
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title{
+        text-align: center;
+    }
 }
