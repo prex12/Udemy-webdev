@@ -1,0 +1,27 @@
+10 bottles of beer on the wall, 10 bottles of beer.
+take one down and pass it around, 9 bottles of beer on the wall
+
+decrementing
+
+var num = 100;
+while (num >= 0){
+	console.log(num + " bottles of beer on the wall, " + num + " bottles of beer.);
+	num--;
+	console.log("take one dowm and pass it around, " + num + " bottles of beer on the wall");
+}
+
+Fibonacci sequence 
+
+Basiclly, the next number in the sequence is the sum of the previous 2 numbers
+2 =	1 +	1
+n = (n-1) + (n -2) to do this we have to access the elements of the array like this 
+var arr[];
+arr[arr.lenght - 2] + arr[arr.lenght - 1];
+
+[0, 1, 1, 2]
+
+n.lenght return an int
+
+var array[n];
+if (array[n] === 0)
+n = 

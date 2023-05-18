@@ -37,3 +37,28 @@ function bmiCalculator(weight, height){
   calc = Math.round(calc);
   return calc;
 }
+
+// the Math.random() method generates numbers between 0 and 0.9 and not 1 in 16 decimal places
+// the number can then be scaled depending on our usage or functionality. Below i would scale the number generated to 100
+
+var num = Math.floor(Math.random() * 100);
+
+console.log(num);
+
+// arrays in js are a collection of items that are closely related
+var eggs = ["alli", 12, "me"];
+// prints the element of the array eggs conatained in the position 2
+console.log(eggs[2]);
+// practical examnple of Array
+
+var guestList = ["alli", "huzzain", "opeyemi"];
+
+var guest = prompt("give me your name so i can check the guest list to see if you're on it: ");
+
+if (guestList.includes(guest)){
+  alert("welcome in guest");
+  var prob = guestList.includes(guest);
+}else{
+  alert("imposter alert!");
+  var prob = guestList.includes(guest);
+}
