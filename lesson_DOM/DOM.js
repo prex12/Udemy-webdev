@@ -12,7 +12,7 @@ document.firstElementChild.querySelector("p");
 document.getElementsByTagName("a")[2].style.color = red;
 // in the above code we see the function containing an 's' at the end of elements, this is because it returns a list/ array of items with elememts with the name tag name in our site.
 
-document.getElementsByClassName("a").style.color = red;
+ducument.getElmentsByclassName(".welp")[1].textContent.style.color ="blue";
 
 // here the same principle applies. in order for us to modify its property we need to specify which one we wopuld like to affect by giving it an index in square brackets []
 
@@ -30,12 +30,23 @@ ducument.querySelectorAll("title");
 document.querySelector("selectorName").classList;
 //  the above line of code returns a list of elements with the selector name passed as arg and with is we can use the
 // followuing method to either add, remove or toggle classes.
-... .classList.add("class");
-... .classList.remove("class");
-... .classlist.toggle("class");
+.classList.add("class");
+.classList.remove("class");
+.classlist.toggle("class");
 
 // the textContent property enables us to be able to change just text content o
 // and element
 
 // the innerHtml property allows us to change anything HTML in an elemets in particular
 
+// attribute of elements in html file can also be manipulated in the follewing ways 
+// first to show attributes. dispalys all attributes conatined in selector
+// in form of list
+document.querySelector("a").attributes();
+
+// secondly, the getAttribute which takes and argurment and shows up the value
+
+document.querySelector("a").getAttribute("href");
+
+// thrirdly, the setAttribute which takes 2 args the attribute name and new value to be added
+document.querySelector("a").setAttribute("href", "www.google.com");
