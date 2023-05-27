@@ -5,12 +5,14 @@ for (var i = 0; i < newEventButton; i++){
         // audio.play();
         var buttonPressed = this.textContent;
         pressed(buttonPressed);
+        buttonAnimation(buttonPressed);
        
     });
 }
 
 document.addEventListener("keypress", function(event){
     pressed(event.key);
+    buttonAnimation(event.key);
 })
 
 function pressed(keys){
@@ -46,6 +48,14 @@ function pressed(keys){
 
         default: console.log(buttonPressed);
     }
+}
+//adding animations to buttons
+function buttonAnimation(vibe){
+    var but = document.querySelector("." + vibe).classList;
+    but.add("pressed");
+    setTimeout(function(){
+        but.remove("pressed");
+    }, 100)
 }
 
 // Higher order functions take functions as argument/ parameter
