@@ -1,0 +1,14 @@
+{
+  "name": "node.js-lesson-backend",
+  "version": "1.0.0",
+  "description": "this is a intro to node.js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alli Huzzain",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}
