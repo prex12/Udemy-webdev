@@ -1,9 +1,18 @@
 const express = require('express');
 const app = express();
 const https = require('https');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res)=>{
-    https.get("https://api.openweathermap.org/data/2.5/weather?q=London&appid=061230294bc4b7f52f36eddac6bab20c", (response) =>{
+    res.sendFile(__dirname + "/index.html"); 
+})
+app.post("/", function(req, res){
+    const query = req.body.Location;
+    const appKey = "061230294bc4b7f52f36eddac6bab20c";
+    const serverLink = "https://api.openweathermap.org/data/2.5/weather?q=" + query +"&appid="+ appKey;
+    https.get(serverLink, (response) =>{
         response.on("data", (data) => {
             const weatherData = JSON.parse(data);
             const temp = weatherData.main.temp;
@@ -17,9 +26,8 @@ app.get("/", (req, res)=>{
             res.send();
         })
     })
-
-    
 })
+
 
 
 
