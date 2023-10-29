@@ -1,0 +1,13 @@
+.portal{
+    width: 50%;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 15px;
+    position: absolute;
+    left: 25%;
+    /* top: 20px; */
+    text-align: center;
+    z-index: 1;
+    color: aliceblue;
+    background-color: #000;
+}
